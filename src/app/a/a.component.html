@@ -1,0 +1,9 @@
+<p>
+  a works!{{productId}}
+  股票代码是{{stockCode}},股票价格是{{price | number:"2.2-2"}}
+  <input type="button" value="立即购买" (click)="buyStock($event)">
+
+  <input type="text" [(ngModel)]="green">
+  <input type="text" [(ngModel)]="user.name">
+  <app-achild [green]="green" [user]="user"></app-achild>
+</p>
